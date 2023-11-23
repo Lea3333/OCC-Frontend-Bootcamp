@@ -1,2 +1,3 @@
-Coffee
-Lunch : stir fry
+Breakfast: Coffee
+Lunch : Stir fry
+Dinner : Salad
