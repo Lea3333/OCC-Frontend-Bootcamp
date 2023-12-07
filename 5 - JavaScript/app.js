@@ -1,24 +1,37 @@
-// String - abc123&#@
-let name = "John";
-console.log("The type of name:" , typeof name);
+// Introduction to Arrays
 
-// Number
-let age = 25;
-console.log("The type of age:" , typeof age);
+let superheros = ["Superman" , "Batman" , "Joker", "Spiderman", "Wonder Woman"];
 
-// Boolean - True or False
-let isStudent = false;
-let isTeacher = true;
-console.log("The type of isStudent:" , typeof isStudent);
-console.log("The type of isTeacher:" , typeof isTeacher);
+console.log("Hero 1 is" , superheros[0]);
+console.log("Hero 5 is" , superheros[4]);
 
-// Null - Intentional absence of data
-let girlFriend = null;
-console.log("The type of girlfriend:" , typeof girlFriend);
+superheros[2] = "Doctor Strange";
 
-let city;
-console.log(city);
-console.log("The value of city:" , city);
-console.log("The type of city" , typeof city);
+console.log(superheros);
 
-// So, when you run typeof null in JavaScript, it returns "object," because originally, JavaScript was designed in a rush, and this behavior was an oversight.
+// Push Method (Adding a new value to the array)
+superheros.push("Deadpool");
+console.log(superheros);
+
+// Pop Method (Removing last value in the array)
+superheros.pop();
+console.log(superheros);
+
+// Array iteration
+for (let i = 0; i <= 4; i++) {
+    console.log("Hero" , i+1 , "is" , superheros[i]);
+}
+// --> if you want to specify where is starts and end
+
+// forEach Method
+superheros.forEach(function(hero) {
+    console.log("Hero is" , hero);
+})
+
+// Array Methods
+console.log("Array Length is" , superheros.length);
+console.log("Index of Wonder Woman is" , superheros.indexOf("Wonder Woman"));
+console.log("Joined Array: " , superheros.join(" - "));
+
+let sliceArray = superheros.slice(1, 4);
+console.log(sliceArray);
