@@ -35,3 +35,11 @@ console.log("Joined Array: " , superheros.join(" - "));
 
 let sliceArray = superheros.slice(1, 4);
 console.log(sliceArray);
+
+let slicedArray = superheros.slice(0, 3);
+console.log("Sliced Array:", slicedArray);
+console.log("Superheros Array:", superheros);
+
+let removedElements = superheros.splice(2, 2);
+console.log("Removed Elements:", removedElements);
+console.log("Updated array:", superheros);
